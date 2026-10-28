@@ -11,12 +11,6 @@ A modern, high-performance, dark-luxury developer portfolio crafted with **Next.
 
 ---
 
-## 📌 One-Line GitHub Description
-
-> 🚀 Modern, dark-luxury developer portfolio built with Next.js 16, React 19, TypeScript & Tailwind CSS showcasing full-stack projects, competitive programming milestones, and technical skills.
-
----
-
 ## 🔗 Live Links
 
 * 🌐 **Live Portfolio:** [aminul-portfolio.vercel.app](https://aminul-portfolio.vercel.app/) *(or local `http://localhost:3000`)*
@@ -188,9 +182,6 @@ npm run start
 * 💻 Aspiring Full-Stack Developer & Competitive Programmer
 * 🌐 **GitHub:** [@AmiNuL-72](https://github.com/AmiNuL-72)
 * 💼 **LinkedIn:** [aminul72](https://www.linkedin.com/in/aminul72/)
-* 🏆 **Codeforces:** [JustCode0rCode__YLN_---](https://codeforces.com/profile/JustCode0rCode__YLN_---) (Specialist)
-* ⭐ **CodeChef:** [aminul_72](https://www.codechef.com/users/aminul_72) (3★)
-* 🧩 **LeetCode:** [AmiNuL_72](https://leetcode.com/u/AmiNuL_72/)
 * 📱 **WhatsApp:** [+8801705730622](https://wa.me/8801705730622)
 * ✉️ **Email:** [aminul.cse8.bu@gmail.com](mailto:aminul.cse8.bu@gmail.com)
 
