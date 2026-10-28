@@ -57,7 +57,7 @@ export const personalInfo = {
     whatsapp: "https://wa.me/8801705730622",
   },
   stats: [
-    { label: "Problems Solved", value: "800+" },
+    { label: "Problems Solved", value: "3000+" },
     { label: "Codeforces Rank", value: "Specialist" },
     { label: "CodeChef Rating", value: "3-Star" },
     { label: "Web Projects", value: "10+" },
@@ -161,7 +161,7 @@ export const educationData = [
     degree: "B.Sc. in Computer Science & Engineering (CSE)",
     institution: "University of Barishal",
     location: "Barishal, Bangladesh",
-    period: "2021 – Present (Undergraduate)",
+    period: "2022 – Present (Undergraduate)",
     department: "Department of Computer Science & Engineering",
     description:
       "Comprehensive undergraduate curriculum with strong emphasis on Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Web Engineering, Software Engineering, and Computer Networks.",
@@ -181,10 +181,10 @@ export const experienceData = [
   {
     role: "Competitive Programmer & Algorithmic Problem Solver",
     organization: "Codeforces, CodeChef & Online Judges",
-    period: "2021 – Present",
+    period: "2022 – 2025",
     points: [
       "Attained Specialist rank on Codeforces (max rating 1400+) and 3-Star coder status on CodeChef.",
-      "Solved 800+ algorithmic problems across Codeforces, CodeChef, LeetCode, AtCoder, and Toph.",
+      "Solved 1500+ algorithmic problems across Codeforces, CodeChef, LeetCode, AtCoder, and Toph.",
       "Proficient in Dynamic Programming, Graph Theory, Greedy Algorithms, Number Theory, and Segment Trees.",
       "Consistently participated in weekly contests under intense time constraints to refine problem-solving speed.",
     ],
@@ -192,7 +192,7 @@ export const experienceData = [
   {
     role: "Frontend & Full-Stack Developer",
     organization: "Personal & Academic Projects",
-    period: "2023 – Present",
+    period: "2025 – Present",
     points: [
       "Developed production-ready web apps using Next.js 16 App Router, TypeScript, React 19, and Tailwind CSS.",
       "Integrated secure authentication protocols with Better-Auth and session management.",

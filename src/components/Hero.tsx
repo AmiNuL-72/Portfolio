@@ -356,7 +356,7 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-[11px] text-gray-400 uppercase font-semibold">Algorithms</p>
-                <p className="text-sm font-bold text-emerald-300">800+ Solved</p>
+                <p className="text-sm font-bold text-emerald-300">1.5k+ Solved</p>
               </div>
             </div>
           </div>
