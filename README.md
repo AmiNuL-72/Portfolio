@@ -13,7 +13,7 @@ A modern, high-performance, dark-luxury developer portfolio crafted with **Next.
 
 ## 🔗 Live Links
 
-* 🌐 **Live Portfolio:** [aminul-portfolio.vercel.app](https://aminul-portfolio.vercel.app/) *(or local `http://localhost:3000`)*
+* 🌐 **Live Portfolio:** [aminul72-portfolio.vercel.app](https://aminul72-portfolio.vercel.app/)
 * 📂 **Source Repository:** [github.com/AmiNuL-72/my-portfolio](https://github.com/AmiNuL-72)
 * 📄 **Direct Resume Download:** [`/resume.pdf`](public/resume.pdf)
 

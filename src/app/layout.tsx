@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aminul72-portfolio.vercel.app"),
   title: "Md Aminul Islam | Portfolio - Aspiring Full-Stack Developer",
   description:
     "Portfolio of Md Aminul Islam (Amin) - Aspiring Full-Stack Developer, Competitive Programmer (Codeforces Specialist, CodeChef 3-Star), Computer Science undergraduate at University of Barishal.",
@@ -35,6 +36,8 @@ export const metadata: Metadata = {
     title: "Md Aminul Islam | Portfolio",
     description:
       "Aspiring Full-Stack Developer & Competitive Programmer building modern web applications with Next.js 16, React, TypeScript, and Tailwind CSS.",
+    url: "https://aminul72-portfolio.vercel.app",
+    siteName: "Md Aminul Islam Portfolio",
     type: "website",
     locale: "en_US",
   },
