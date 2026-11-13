@@ -78,6 +78,11 @@ export default function Projects() {
                         <span className="text-xs uppercase tracking-wider font-bold px-3 py-1 rounded-full bg-[#ecca98]/15 text-[#ecca98] border border-[#ecca98]/20">
                           {project.category}
                         </span>
+                        {project.period && (
+                          <span className="text-xs text-gray-400 font-medium ml-auto">
+                            {project.period}
+                          </span>
+                        )}
                       </div>
 
                       {/* Project Name */}
@@ -135,11 +140,25 @@ export default function Projects() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2.5 rounded-xl border border-white/15 text-gray-300 hover:text-white hover:border-[#ecca98] hover:bg-white/5 transition-colors"
-                        title="View GitHub Repository (Client)"
+                        title={project.githubServer ? "Client Repository" : "GitHub Repository"}
                         aria-label="GitHub Repository"
                       >
                         <GithubIcon className="w-4 h-4" />
                       </a>
+
+                      {project.githubServer && (
+                        <a
+                          href={project.githubServer}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2.5 rounded-xl border border-white/15 text-gray-300 hover:text-white hover:border-[#ecca98] hover:bg-white/5 transition-colors flex items-center gap-1 text-xs font-semibold"
+                          title="Server Repository"
+                          aria-label="GitHub Server Repository"
+                        >
+                          <GithubIcon className="w-4 h-4" />
+                          <span className="text-[11px] text-gray-400">Server</span>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

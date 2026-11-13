@@ -13,6 +13,9 @@ import {
   SiNodedotjs,
   SiExpress,
   SiMongodb,
+  SiMongoose,
+  SiJsonwebtokens,
+  SiAxios,
   SiCplusplus,
   SiC,
   SiCodeforces,
@@ -76,6 +79,12 @@ export function TechIcon({
       return <SiExpress className={className} style={{ color: color || "#E5E5E5" }} />;
     case "mongodb":
       return <SiMongodb className={className} style={{ color: color || "#47A248" }} />;
+    case "mongoose":
+      return <SiMongoose className={className} style={{ color: color || "#880000" }} />;
+    case "jwt":
+      return <SiJsonwebtokens className={className} style={{ color: color || "#D63AFF" }} />;
+    case "axios":
+      return <SiAxios className={className} style={{ color: color || "#5A29E4" }} />;
     case "cplusplus":
       return <SiCplusplus className={className} style={{ color: color || "#00599C" }} />;
     case "c":

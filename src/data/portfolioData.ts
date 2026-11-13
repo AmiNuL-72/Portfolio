@@ -2,6 +2,7 @@ export interface Project {
   id: string;
   slug: string;
   name: string;
+  period?: string;
   category: string;
   emoji: string;
   headline: string;
@@ -14,6 +15,7 @@ export interface Project {
   futurePlans: string[];
   liveLink: string;
   github: string;
+  githubServer?: string;
 }
 
 export interface SkillItem {
@@ -101,6 +103,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Node.js", iconId: "nodejs", color: "#5FA04E", level: "Intermediate" },
       { name: "Express.js", iconId: "express", color: "#E5E5E5", level: "Intermediate" },
       { name: "MongoDB", iconId: "mongodb", color: "#47A248", level: "Intermediate" },
+      { name: "Mongoose", iconId: "mongoose", color: "#880000", level: "Intermediate" },
+      { name: "JWT", iconId: "jwt", color: "#D63AFF", level: "Proficient" },
       { name: "Better-Auth", iconId: "betterauth", color: "#E5C9A0", level: "Proficient" },
       { name: "RESTful APIs", iconId: "restapi", color: "#F59E0B", level: "Proficient" },
       { name: "JSON & Web APIs", iconId: "json", color: "#0284C7", level: "Advanced" },
@@ -146,6 +150,8 @@ export const marqueeSkillItems = [
   { name: "Node.js", iconId: "nodejs", color: "#5FA04E" },
   { name: "Express.js", iconId: "express", color: "#E5E5E5" },
   { name: "MongoDB", iconId: "mongodb", color: "#47A248" },
+  { name: "Mongoose", iconId: "mongoose", color: "#880000" },
+  { name: "JWT", iconId: "jwt", color: "#D63AFF" },
   { name: "Git & GitHub", iconId: "github", color: "#F0F6FC" },
   { name: "VS Code", iconId: "vscode", color: "#007ACC" },
   { name: "Vercel", iconId: "vercel", color: "#FFFFFF" },
@@ -205,6 +211,83 @@ export const experienceData = [
 export const projectsData: Project[] = [
   {
     id: "1",
+    slug: "studiospace",
+    name: "StudioSpace – Peer-to-Peer Creative Workspace Marketplace",
+    period: "Nov 2026 - Nov 2026",
+    category: "FULL STACK",
+    emoji: "🎬",
+    headline: "Discover, list & book creative production studios, podcasts lounges & photo suites by the hour",
+    description:
+      "A full-stack platform that connects creators with production studio owners. Filmmakers, photographers, podcasters, and musicians can discover and book creative spaces by the hour — while hosts list and manage their studios from one dashboard.",
+    fullDescription:
+      "StudioSpace is a production-ready, peer-to-peer workspace marketplace engineered end-to-end with Next.js, TypeScript, Tailwind CSS, Express.js, MongoDB, and Mongoose. It delivers an Airbnb-style reservation experience tailored for the creative industry. The platform features secure JWT authentication stored in HTTPOnly cookies, real-time double-booking prevention, automated booking invoice generation, interactive search with multi-criteria filters, and a dedicated host management dashboard.",
+    images: [
+      "/assets/projects/studiospace/studiospace-1.jpg",
+      "/assets/projects/studiospace/studiospace-2.jpg",
+      "/assets/projects/studiospace/studiospace-3.jpg",
+      "/assets/projects/studiospace/studiospace-4.jpg",
+    ],
+    techBadges: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Axios",
+      "Sonner",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "bcrypt",
+      "Vercel",
+    ],
+    keyFeatures: [
+      {
+        icon: "🔍",
+        text: "Dynamic Studio Discovery: Search, filter by studio category (Podcast Lounge, Film Stage, Music Suite, Photo Studio), and sort by hourly pricing or capacity.",
+      },
+      {
+        icon: "📅",
+        text: "Double-Booking Prevention: Bulletproof reservation scheduling system preventing overlapping time-slot conflicts across studio spaces.",
+      },
+      {
+        icon: "🔐",
+        text: "Secure JWT Authentication: Token-based auth stored securely in HTTPOnly cookies with strict server-side protected route middleware.",
+      },
+      {
+        icon: "🛠️",
+        text: "Full Host Listing CRUD: Studio owners can create, update, inspect, and manage studio amenities, hourly rates, crew sizes, and cover photos.",
+      },
+      {
+        icon: "📊",
+        text: "Host & Creator Dashboard: Centralized portal to monitor active reservations, revenue summaries, booking statuses, and guest details.",
+      },
+      {
+        icon: "🧾",
+        text: "Downloadable Booking Invoices & Wishlist: Instant PDF invoice generation upon booking confirmation and favorites wishlist for quick booking.",
+      },
+      {
+        icon: "🌙",
+        text: "Seamless Light & Dark Themes: Carefully styled theme switcher providing high-contrast visual clarity across desktop and mobile devices.",
+      },
+    ],
+    challenges: [
+      "Implementing atomic booking concurrency to eliminate race conditions and avoid double-booking the same studio at overlapping hourly windows.",
+      "Securing cross-origin authentication between independent Vercel frontend deployments and Express API backend using HTTPOnly SameSite cookies.",
+      "Structuring multi-image galleries with high visual fidelity while preserving snappy page render speeds and zero layout shifts.",
+      "Building unified host analytics and user booking state management with Axios interceptors and Sonner toast notifications.",
+    ],
+    futurePlans: [
+      "Integrate Stripe & SSLCommerz payment gateways for automatic escrow deposits and instant host payouts.",
+      "Incorporate interactive 360-degree virtual studio walk-through tours and live studio availability calendars.",
+      "Add direct in-app messaging and real-time push notifications between studio hosts and creators via WebSockets.",
+      "Introduce verified creator reviews and badge verification for top-tier production equipment.",
+    ],
+    liveLink: "https://studiospace-client-as8.vercel.app/",
+    github: "https://github.com/AmiNuL-72/studiospace-client",
+    githubServer: "https://github.com/AmiNuL-72/studiospace-server",
+  },
+  {
+    id: "2",
     slug: "bazardor",
     name: "BazarDor – Daily Market Price Tracker & Analytics",
     category: "FULL STACK",
@@ -270,7 +353,7 @@ export const projectsData: Project[] = [
     github: "https://github.com/AmiNuL-72/As-07-BazarDor--NextJS-Authentication",
   },
   {
-    id: "2",
+    id: "3",
     slug: "fitlog",
     name: "FitLog – Workout Tracking & Fitness Companion",
     category: "FRONTEND / APP",
@@ -334,70 +417,5 @@ export const projectsData: Project[] = [
     ],
     liveLink: "https://ph-as06-fit-log-project-next-js.vercel.app",
     github: "https://github.com/AmiNuL-72/PH_As06-FitLog-Project-NextJS",
-  },
-  {
-    id: "3",
-    slug: "devstack",
-    name: "DevStack – Tech Stack Explorer",
-    category: "FRONTEND / REACT",
-    emoji: "🧑‍💻",
-    headline: "Explore modern web technologies and curate your personalized tech stack",
-    description:
-      "DevStack is a responsive React application for exploring modern web technologies and building a personal technology stack. Users can browse technology cards, add their favorite tools, and manage their selected stack in one place.",
-    fullDescription:
-      "DevStack helps developers, students, and tech enthusiasts discover modern developer tools, libraries, and frameworks across frontend, backend, database, and devops categories. Built with React, TypeScript, Vite, and Tailwind CSS, it features interactive category filtering, duplicate-selection guards, real-time stack analytics, and toast notifications.",
-    images: [
-      "/assets/projects/devstack-1.png",
-      "/assets/projects/devstack-2.png",
-    ],
-    techBadges: [
-      "React.js",
-      "TypeScript",
-      "Vite",
-      "Tailwind CSS",
-      "DaisyUI",
-      "React Toastify",
-      "Netlify",
-    ],
-    keyFeatures: [
-      {
-        icon: "🔍",
-        text: "Explore Technologies by Category: browse frontend, backend, tools, and databases with interactive filters.",
-      },
-      {
-        icon: "➕",
-        text: "Personal Stack Builder: add technologies to your stack with automated duplicate-prevention checks.",
-      },
-      {
-        icon: "🔔",
-        text: "Interactive Toast Notifications: instant visual feedback on adding, removing, or clearing stack items.",
-      },
-      {
-        icon: "📊",
-        text: "Curated Stack Overview: real-time summary counter of tools selected across technical domains.",
-      },
-      {
-        icon: "📱",
-        text: "Fully Responsive Card Grid: fluid layout with rich hover transitions and badge indicators.",
-      },
-      {
-        icon: "🗑️",
-        text: "Flexible Stack Management: quick single-item removal or complete stack reset in one click.",
-      },
-    ],
-    challenges: [
-      "Managing complex client state for technology selection with duplicate prevention logic in TypeScript.",
-      "Implementing efficient category filtering while maintaining snappy search transitions.",
-      "Styling clean, responsive card grids that scale gracefully from smartphone viewports to ultra-wide monitors.",
-      "Optimizing bundle size and lightning-fast loading speeds using Vite and Tailwind CSS utility classes.",
-    ],
-    futurePlans: [
-      "Allow users to export their curated stack configuration as a `README.md` badge set or JSON boilerplate.",
-      "Add community upvoting and popularity rankings for trending developer tools.",
-      "Integrate GitHub API to display real-time repository stars, issues, and release activity for each tool.",
-      "Provide recommended learning roadmaps tailored to the selected technologies.",
-    ],
-    liveLink: "https://devstack-a05-reactproject.netlify.app/",
-    github: "https://github.com/AmiNuL-72/As-05-DevStack-ReactProject",
   },
 ];

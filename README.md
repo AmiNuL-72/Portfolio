@@ -63,15 +63,19 @@ A modern, high-performance, dark-luxury developer portfolio crafted with **Next.
 
 ### 7. 🚀 Featured Projects & Dynamic Detail Pages
 Showcases 3 flagship live applications with high-definition screenshots and deep-dive routes:
-1. **🛒 [BazarDor – Daily Market Price Tracker & Analytics](https://as-07-bazar-dor.vercel.app)**
+1. **🎬 [StudioSpace – Peer-to-Peer Creative Workspace Marketplace](https://studiospace-client-as8.vercel.app/)**
+   * *Overview:* Full-stack platform connecting creators with studio owners by the hour — with dynamic discovery, double-booking prevention, and host dashboard.
+   * *Tech:* Next.js, TypeScript, Tailwind CSS, Axios, Sonner, Express.js, MongoDB, Mongoose, JWT, bcrypt.
+   * *Client Repo:* [studiospace-client](https://github.com/AmiNuL-72/studiospace-client)
+   * *Server Repo:* [studiospace-server](https://github.com/AmiNuL-72/studiospace-server)
+2. **🛒 [BazarDor – Daily Market Price Tracker & Analytics](https://as-07-bazar-dor.vercel.app)**
+   * *Overview:* Modern commodity price tracking web app with live tickers, Better-Auth security, and price trend analytics.
    * *Tech:* Next.js 16, TypeScript, React 19, Better-Auth, Tailwind CSS.
    * *Repo:* [As-07-BazarDor--NextJS-Authentication](https://github.com/AmiNuL-72/As-07-BazarDor--NextJS-Authentication)
-2. **🏋️ [FitLog – Workout Tracking & Fitness Companion](https://ph-as06-fit-log-project-next-js.vercel.app)**
+3. **🏋️ [FitLog – Workout Tracking & Fitness Companion](https://ph-as06-fit-log-project-next-js.vercel.app)**
+   * *Overview:* Dark-themed gym companion web app to plan workouts, log sets, and monitor weekly fitness milestones.
    * *Tech:* Next.js 16, React 19, TypeScript, Tailwind CSS v4, Context API.
    * *Repo:* [PH_As06-FitLog-Project-NextJS](https://github.com/AmiNuL-72/PH_As06-FitLog-Project-NextJS)
-3. **🧑‍💻 [DevStack – Tech Stack Explorer](https://devstack-a05-reactproject.netlify.app/)**
-   * *Tech:* React.js, TypeScript, Vite, Tailwind CSS, DaisyUI.
-   * *Repo:* [As-05-DevStack-ReactProject](https://github.com/AmiNuL-72/As-05-DevStack-ReactProject)
 
 **Each Dedicated `/projects/[id]` Page Includes:**
 * Interactive screenshot carousel & thumbnail gallery.

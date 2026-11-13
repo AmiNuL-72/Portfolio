@@ -29,6 +29,10 @@ function getTechIconId(badge: string): string {
   if (b.includes("type")) return "typescript";
   if (b.includes("tail")) return "tailwindcss";
   if (b.includes("better") || b.includes("auth")) return "betterauth";
+  if (b.includes("jwt")) return "jwt";
+  if (b.includes("bcrypt")) return "betterauth";
+  if (b.includes("axios")) return "axios";
+  if (b.includes("mongoose")) return "mongoose";
   if (b.includes("node")) return "nodejs";
   if (b.includes("express")) return "express";
   if (b.includes("mongo")) return "mongodb";
@@ -103,8 +107,20 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 className="flex items-center gap-2 border border-[#ecca98] text-[#ecca98] hover:bg-[#ecca98] hover:text-gray-950 px-6 py-3 rounded-xl font-semibold transition-all duration-200 text-sm sm:text-base"
               >
                 <GithubIcon className="w-4 h-4" />
-                <span>View Source Code</span>
+                <span>{project.githubServer ? "Client Code" : "View Source Code"}</span>
               </a>
+
+              {project.githubServer && (
+                <a
+                  href={project.githubServer}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 border border-white/20 text-gray-300 hover:border-[#ecca98] hover:text-[#ecca98] hover:bg-white/5 px-6 py-3 rounded-xl font-semibold transition-all duration-200 text-sm sm:text-base"
+                >
+                  <GithubIcon className="w-4 h-4" />
+                  <span>Server Code</span>
+                </a>
+              )}
             </div>
           </div>
 
