@@ -224,10 +224,13 @@ export const projectsData: Project[] = [
     fullDescription:
       "SalonBook delivers a luxury concierge reservation experience tailored for modern salons and beauty studios. Customers can browse dynamic service dossiers, search and filter treatments, schedule conflict-free appointments, and pay securely with Stripe Checkout. Administrators have a dedicated executive suite for full service CRUD, appointment confirmations, customer moderation, and immutable transaction audit logs.",
     images: [
-      "/assets/projects/salonbook/salonbook-1.png",
-      "/assets/projects/salonbook/salonbook-featured.png",
-      "/assets/projects/salonbook/salonbook-2.png",
-      "/assets/projects/salonbook/salonbook-3.png",
+      "/assets/projects/salonbook/salonbook-1.jpg",
+      "/assets/projects/salonbook/salonbook-2.jpg",
+      "/assets/projects/salonbook/salonbook-3.jpg",
+      "/assets/projects/salonbook/salonbook-4.png",
+      "/assets/projects/salonbook/salonbook-5.png",
+      "/assets/projects/salonbook/salonbook-6.png",
+      "/assets/projects/salonbook/salonbook-7.png",
     ],
     techBadges: [
       "Next.js 16",
