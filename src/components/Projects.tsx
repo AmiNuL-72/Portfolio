@@ -52,16 +52,29 @@ export default function Projects() {
                   >
                     <Link
                       href={`/projects/${project.id}`}
-                      className="block relative w-full h-64 sm:h-80 md:h-96 overflow-hidden bg-[#0c0c20]"
+                      className="block relative w-full h-72 sm:h-88 md:h-[420px] overflow-hidden bg-[#070718] p-3 sm:p-4"
                     >
-                      <Image
-                        src={project.images[0]}
-                        alt={project.name}
-                        fill
-                        className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 700px"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1a] via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
+                      {/* Ambient background blur using the same image */}
+                      <div className="absolute inset-0 overflow-hidden opacity-20 filter blur-2xl scale-110 pointer-events-none">
+                        <Image
+                          src={project.images[0]}
+                          alt=""
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+
+                      {/* Authentic uncropped screenshot preserving exact aspect ratio */}
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={project.images[0]}
+                          alt={project.name}
+                          fill
+                          className="object-contain transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 700px"
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1a]/30 via-transparent to-transparent pointer-events-none" />
                     </Link>
                   </div>
 
