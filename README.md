@@ -15,7 +15,7 @@ A modern, high-performance, dark-luxury developer portfolio crafted with **Next.
 
 * 🌐 **Live Portfolio:** [aminul72-portfolio.vercel.app](https://aminul72-portfolio.vercel.app/)
 * 📂 **Source Repository:** [github.com/AmiNuL-72/my-portfolio](https://github.com/AmiNuL-72)
-* 📄 **Direct Resume Download:** [`/resume.pdf`](public/resume.pdf)
+* 📄 **Resume / CV:** [Google Drive Resume](https://drive.google.com/file/d/1tpUAz0Wdg1tWu-FujyCnpFUUrDRYlI1d/view?usp=drive_link)
 
 ---
 
@@ -63,19 +63,20 @@ A modern, high-performance, dark-luxury developer portfolio crafted with **Next.
 
 ### 7. 🚀 Featured Projects & Dynamic Detail Pages
 Showcases 3 flagship live applications with high-definition screenshots and deep-dive routes:
-1. **🎬 [StudioSpace – Peer-to-Peer Creative Workspace Marketplace](https://studiospace-client-as8.vercel.app/)**
+1. **✂️ [SalonBook — Luxury Salon Appointment Booking Platform](https://salonbook-as09.vercel.app/)**
+   * *Overview:* A modern, high-end salon appointment booking platform with conflict-free scheduling, Stripe payment integration, and Better Auth authentication.
+   * *Tech:* Next.js 16, React 19, TypeScript, Tailwind CSS, Better Auth, Stripe, Axios, Express.js, MongoDB, Mongoose, Vercel.
+   * *Client Repo:* [SalonBook-client](https://github.com/AmiNuL-72/SalonBook-client)
+   * *Server Repo:* [SalonBook-server](https://github.com/AmiNuL-72/SalonBook-server)
+2. **🎬 [StudioSpace – Peer-to-Peer Creative Workspace Marketplace](https://studiospace-client-as8.vercel.app/)**
    * *Overview:* Full-stack platform connecting creators with studio owners by the hour — with dynamic discovery, double-booking prevention, and host dashboard.
    * *Tech:* Next.js, TypeScript, Tailwind CSS, Axios, Sonner, Express.js, MongoDB, Mongoose, JWT, bcrypt.
    * *Client Repo:* [studiospace-client](https://github.com/AmiNuL-72/studiospace-client)
    * *Server Repo:* [studiospace-server](https://github.com/AmiNuL-72/studiospace-server)
-2. **🛒 [BazarDor – Daily Market Price Tracker & Analytics](https://as-07-bazar-dor.vercel.app)**
+3. **🛒 [BazarDor – Daily Market Price Tracker & Analytics](https://as-07-bazar-dor.vercel.app)**
    * *Overview:* Modern commodity price tracking web app with live tickers, Better-Auth security, and price trend analytics.
    * *Tech:* Next.js 16, TypeScript, React 19, Better-Auth, Tailwind CSS.
    * *Repo:* [As-07-BazarDor--NextJS-Authentication](https://github.com/AmiNuL-72/As-07-BazarDor--NextJS-Authentication)
-3. **🏋️ [FitLog – Workout Tracking & Fitness Companion](https://ph-as06-fit-log-project-next-js.vercel.app)**
-   * *Overview:* Dark-themed gym companion web app to plan workouts, log sets, and monitor weekly fitness milestones.
-   * *Tech:* Next.js 16, React 19, TypeScript, Tailwind CSS v4, Context API.
-   * *Repo:* [PH_As06-FitLog-Project-NextJS](https://github.com/AmiNuL-72/PH_As06-FitLog-Project-NextJS)
 
 **Each Dedicated `/projects/[id]` Page Includes:**
 * Interactive screenshot carousel & thumbnail gallery.

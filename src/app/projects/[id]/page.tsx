@@ -28,6 +28,7 @@ function getTechIconId(badge: string): string {
   if (b.includes("react")) return "react";
   if (b.includes("type")) return "typescript";
   if (b.includes("tail")) return "tailwindcss";
+  if (b.includes("stripe")) return "stripe";
   if (b.includes("better") || b.includes("auth")) return "betterauth";
   if (b.includes("jwt")) return "jwt";
   if (b.includes("bcrypt")) return "betterauth";

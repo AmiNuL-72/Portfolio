@@ -101,11 +101,10 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Desktop Resume Download CTA */}
+          {/* Desktop Resume CTA */}
           <div className="hidden md:flex items-center space-x-3">
             <a
               href={personalInfo.resumePath}
-              download="Md_Aminul_Islam_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gradient-to-r from-[#E5C9A0] via-[#c3a270] to-[#997a5c] text-gray-950 px-4 py-2 rounded-lg font-bold text-sm shadow-md shadow-[#ecca98]/10 hover:shadow-[#ecca98]/25 hover:opacity-95 transition-all duration-200 active:scale-95"
@@ -151,14 +150,13 @@ export default function Navbar() {
             <div className="pt-2">
               <a
                 href={personalInfo.resumePath}
-                download="Md_Aminul_Islam_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#E5C9A0] via-[#c3a270] to-[#997a5c] text-gray-950 px-4 py-3 rounded-lg font-bold text-base shadow-md hover:opacity-95 transition-opacity"
               >
                 <Download className="w-4 h-4" />
-                <span>Download Resume</span>
+                <span>Resume / CV</span>
               </a>
             </div>
           </div>

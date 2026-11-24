@@ -212,13 +212,12 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-8">
             <a
               href={personalInfo.resumePath}
-              download="Md_Aminul_Islam_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#E5C9A0] via-[#c3a270] to-[#997a5c] text-gray-950 font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-[#ecca98]/20 hover:opacity-95 hover:shadow-xl hover:shadow-[#ecca98]/30 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0"
             >
               <Download className="w-5 h-5" />
-              <span>Download Resume</span>
+              <span>Resume / CV</span>
             </a>
 
             <a

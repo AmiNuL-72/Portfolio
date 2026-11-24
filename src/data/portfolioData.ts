@@ -46,7 +46,7 @@ export const personalInfo = {
   phone: "+8801705730622",
   whatsapp: "+8801705730622",
   location: "Rajshahi, Bangladesh",
-  resumePath: "/resume.pdf",
+  resumePath: "https://drive.google.com/file/d/1tpUAz0Wdg1tWu-FujyCnpFUUrDRYlI1d/view?usp=drive_link",
   photoUrl: "/assets/profile.jpg",
   socialLinks: {
     github: "https://github.com/AmiNuL-72",
@@ -106,6 +106,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Mongoose", iconId: "mongoose", color: "#880000", level: "Intermediate" },
       { name: "JWT", iconId: "jwt", color: "#D63AFF", level: "Proficient" },
       { name: "Better-Auth", iconId: "betterauth", color: "#E5C9A0", level: "Proficient" },
+      { name: "Stripe", iconId: "stripe", color: "#635BFF", level: "Proficient" },
       { name: "RESTful APIs", iconId: "restapi", color: "#F59E0B", level: "Proficient" },
       { name: "JSON & Web APIs", iconId: "json", color: "#0284C7", level: "Advanced" },
     ],
@@ -147,6 +148,7 @@ export const marqueeSkillItems = [
   { name: "CodeChef 3★", iconId: "codechef", color: "#D4B483" },
   { name: "LeetCode", iconId: "leetcode", color: "#FFA116" },
   { name: "Better-Auth", iconId: "betterauth", color: "#E5C9A0" },
+  { name: "Stripe", iconId: "stripe", color: "#635BFF" },
   { name: "Node.js", iconId: "nodejs", color: "#5FA04E" },
   { name: "Express.js", iconId: "express", color: "#E5E5E5" },
   { name: "MongoDB", iconId: "mongodb", color: "#47A248" },
@@ -211,6 +213,80 @@ export const experienceData = [
 export const projectsData: Project[] = [
   {
     id: "1",
+    slug: "salonbook",
+    name: "SalonBook — Luxury Salon Appointment Booking Platform",
+    period: "Nov 2026 - Present",
+    category: "FULL STACK",
+    emoji: "✂️",
+    headline: "Bespoke salon service booking, conflict-free scheduling & Stripe payments",
+    description:
+      "A modern, high-end salon appointment booking platform built with Next.js 16, TypeScript, Tailwind CSS, and Better Auth. Customers can explore bespoke salon services, book time slots without conflict, manage booking requests, and securely complete payments via Stripe.",
+    fullDescription:
+      "SalonBook delivers a luxury concierge reservation experience tailored for modern salons and beauty studios. Customers can browse dynamic service dossiers, search and filter treatments, schedule conflict-free appointments, and pay securely with Stripe Checkout. Administrators have a dedicated executive suite for full service CRUD, appointment confirmations, customer moderation, and immutable transaction audit logs.",
+    images: [
+      "/assets/projects/salonbook/salonbook-1.png",
+      "/assets/projects/salonbook/salonbook-featured.png",
+      "/assets/projects/salonbook/salonbook-2.png",
+      "/assets/projects/salonbook/salonbook-3.png",
+    ],
+    techBadges: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Better Auth",
+      "Google OAuth",
+      "Stripe",
+      "Axios",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Vercel",
+    ],
+    keyFeatures: [
+      {
+        icon: "✨",
+        text: "Luxury Landing & Service Discovery: Real-time search, category filters, and price sorting across treatments.",
+      },
+      {
+        icon: "📅",
+        text: "Conflict-Free Smart Scheduling: Automatic detection and prevention of duplicate appointments for overlapping time slots.",
+      },
+      {
+        icon: "💳",
+        text: "Stripe Checkout & Instant Confirmation: Secure payment redirection with automated status reconciliation.",
+      },
+      {
+        icon: "🔐",
+        text: "Better Auth with Dual Provider: Email/password credential login plus Google OAuth with protected routes.",
+      },
+      {
+        icon: "👤",
+        text: "Customer Concierge Dashboard: Track appointment requests, review treatment states, cancel pending slots, and complete payments.",
+      },
+      {
+        icon: "🛡️",
+        text: "Executive Admin Operations: Live KPI analytics, full service CRUD with image hosting, customer access moderation, and transaction logs.",
+      },
+    ],
+    challenges: [
+      "Implementing atomic booking concurrency guards to eliminate race conditions and avoid double-booking active appointment slots.",
+      "Securing cross-origin authentication and protected route middleware using Better Auth with Next.js 16 App Router.",
+      "Synchronizing Stripe Checkout Webhook events with MongoDB appointment states to prevent inconsistent payment records.",
+      "Designing an accessible luxury dark/gold aesthetic with treatment dossiers and seamless mobile modals.",
+    ],
+    futurePlans: [
+      "Integrate SMS and automated WhatsApp appointment reminders with direct reschedule links.",
+      "Add multi-staff calendar allocation and individual stylist preference selection.",
+      "Implement customer loyalty reward points, gift cards, and promotional discount codes.",
+      "Introduce AI-powered hairstyle recommendation based on uploaded customer portraits.",
+    ],
+    liveLink: "https://salonbook-as09.vercel.app/",
+    github: "https://github.com/AmiNuL-72/SalonBook-client",
+    githubServer: "https://github.com/AmiNuL-72/SalonBook-server",
+  },
+  {
+    id: "2",
     slug: "studiospace",
     name: "StudioSpace – Peer-to-Peer Creative Workspace Marketplace",
     period: "Nov 2026 - Nov 2026",
@@ -287,7 +363,7 @@ export const projectsData: Project[] = [
     githubServer: "https://github.com/AmiNuL-72/studiospace-server",
   },
   {
-    id: "2",
+    id: "3",
     slug: "bazardor",
     name: "BazarDor – Daily Market Price Tracker & Analytics",
     category: "FULL STACK",
@@ -351,71 +427,5 @@ export const projectsData: Project[] = [
     ],
     liveLink: "https://as-07-bazar-dor.vercel.app",
     github: "https://github.com/AmiNuL-72/As-07-BazarDor--NextJS-Authentication",
-  },
-  {
-    id: "3",
-    slug: "fitlog",
-    name: "FitLog – Workout Tracking & Fitness Companion",
-    category: "FRONTEND / APP",
-    emoji: "🏋️",
-    headline: "Modern gym companion to pick lifts, log sets, and track weekly progress",
-    description:
-      "FitLog is a dark-themed, modern, no-nonsense gym companion web application built with Next.js 16, React 19, and Tailwind CSS v4. Pick your lifts, lock them into today's workout plan, track your session metrics live, and watch your weekly progress add up!",
-    fullDescription:
-      "FitLog delivers an empowering workout logging workflow tailored for gym-goers and athletes who want quick set tracking without unnecessary friction. Built with Next.js 16 App Router, React 19, and Tailwind CSS v4, FitLog features client-side state persistence, exercise routines categorizer, metric counters (reps, weight, sets), and motivational progress indicators designed with a high-contrast dark aesthetic.",
-    images: [
-      "/assets/projects/fitlog-1.png",
-      "/assets/projects/fitlog-2.png",
-    ],
-    techBadges: [
-      "Next.js 16",
-      "React 19",
-      "TypeScript",
-      "Tailwind CSS v4",
-      "DaisyUI",
-      "Context API",
-      "localStorage Persistence",
-      "Vercel",
-    ],
-    keyFeatures: [
-      {
-        icon: "📋",
-        text: "Customizable Workout Routine Builder: select muscle groups and targeted exercises instantly.",
-      },
-      {
-        icon: "⏱️",
-        text: "Live Session Metrics: log reps, weights, and rest intervals effortlessly between sets.",
-      },
-      {
-        icon: "💾",
-        text: "Persistent Local Storage: all active sessions and completed workout history persist across reloads.",
-      },
-      {
-        icon: "🎯",
-        text: "Weekly Consistency & Goal Tracking: visual indicators to celebrate completed workout milestones.",
-      },
-      {
-        icon: "🌙",
-        text: "Modern Dark-Themed UI: designed specifically for high-contrast visibility on mobile screens inside the gym.",
-      },
-      {
-        icon: "⚡",
-        text: "Ultra-Fast Client Interactions: zero-latency state updates powered by React 19 Context API.",
-      },
-    ],
-    challenges: [
-      "Synchronizing active workout state across multi-step flows without losing in-progress set logs upon page refresh.",
-      "Optimizing Tailwind CSS v4 styling rules and typography for seamless visual consistency across mobile and desktop devices.",
-      "Structuring clean modular component hierarchies for reusable workout cards and input counter steppers.",
-      "Ensuring high touch-target accessibility for gym users interacting with mobile screens during intense workouts.",
-    ],
-    futurePlans: [
-      "Integrate cloud database sync (MongoDB/Supabase) to support multi-device user accounts and cross-platform access.",
-      "Add interactive audio rest-timer countdowns with custom sound cues.",
-      "Provide 1-Rep Max (1RM) calculators and personal record (PR) milestone badges.",
-      "Export workout histories to CSV and PDF formats for personal coaches.",
-    ],
-    liveLink: "https://ph-as06-fit-log-project-next-js.vercel.app",
-    github: "https://github.com/AmiNuL-72/PH_As06-FitLog-Project-NextJS",
   },
 ];

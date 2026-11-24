@@ -28,6 +28,7 @@ import {
   SiVite,
   SiLinux,
   SiPostman,
+  SiStripe,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import {
@@ -111,6 +112,8 @@ export function TechIcon({
       return <SiLinux className={className} style={{ color: color || "#FCC624" }} />;
     case "postman":
       return <SiPostman className={className} style={{ color: color || "#FF6C37" }} />;
+    case "stripe":
+      return <SiStripe className={className} style={{ color: color || "#635BFF" }} />;
     case "betterauth":
       return <FaShieldAlt className={className} style={{ color: color || "#E5C9A0" }} />;
     case "restapi":
